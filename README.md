@@ -55,9 +55,12 @@
 - Lección 09: http://gcoronelc.blogspot.pe/2014/04/java-poo-leccion-09-excepciones.html
 
 
+# CLASES
 
-
-
+- Clase 1: 03-12-2016
+- Clase 2: 10-12-2016
+- Clase 3: 17-12-2016
+- Clase 4: 18-12-2016
 
 
 
