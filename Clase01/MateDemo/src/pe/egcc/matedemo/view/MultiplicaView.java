@@ -7,12 +7,12 @@ import pe.egcc.matedemo.service.MateService;
  *
  * @author Gustavo Coronel
  */
-public class SumaView extends javax.swing.JFrame {
+public class MultiplicaView extends javax.swing.JFrame {
 
   /**
    * Creates new form SumaView
    */
-  public SumaView() {
+  public MultiplicaView() {
     initComponents();
     this.setLocationRelativeTo(null);
   }
@@ -32,13 +32,13 @@ public class SumaView extends javax.swing.JFrame {
     btnProcesar = new javax.swing.JButton();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-    setTitle("SUMAR");
+    setTitle("MULTIPLICAR");
 
     jLabel1.setBackground(new java.awt.Color(0, 0, 102));
     jLabel1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
     jLabel1.setForeground(new java.awt.Color(255, 153, 153));
     jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-    jLabel1.setText("SUMAR DOS NUMEROS");
+    jLabel1.setText("MULTIPLICAR DOS NUMEROS");
     jLabel1.setOpaque(true);
 
     jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -63,7 +63,7 @@ public class SumaView extends javax.swing.JFrame {
     getContentPane().setLayout(layout);
     layout.setHorizontalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 511, Short.MAX_VALUE)
+      .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 581, Short.MAX_VALUE)
       .addGroup(layout.createSequentialGroup()
         .addGap(106, 106, 106)
         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -105,12 +105,12 @@ public class SumaView extends javax.swing.JFrame {
     // Proceso
     MateService mateService;
     mateService = new MateService();
-    int suma = mateService.sumar(n1, n2);
+    int prod = mateService.multiplicar(n1, n2);
     // Reporte
     String repo = "";
     repo += "Número 1: " + n1 + "\n";
     repo += "Número 2: " + n2 + "\n";
-    repo += "Suma: " + suma + "\n";
+    repo += "Producto: " + prod + "\n";
     JOptionPane.showMessageDialog(rootPane, repo);
   }//GEN-LAST:event_btnProcesarActionPerformed
 
@@ -131,20 +131,21 @@ public class SumaView extends javax.swing.JFrame {
         }
       }
     } catch (ClassNotFoundException ex) {
-      java.util.logging.Logger.getLogger(SumaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+      java.util.logging.Logger.getLogger(MultiplicaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
     } catch (InstantiationException ex) {
-      java.util.logging.Logger.getLogger(SumaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+      java.util.logging.Logger.getLogger(MultiplicaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
     } catch (IllegalAccessException ex) {
-      java.util.logging.Logger.getLogger(SumaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+      java.util.logging.Logger.getLogger(MultiplicaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
     } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-      java.util.logging.Logger.getLogger(SumaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+      java.util.logging.Logger.getLogger(MultiplicaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
     }
+    //</editor-fold>
     //</editor-fold>
 
     /* Create and display the form */
     java.awt.EventQueue.invokeLater(new Runnable() {
       public void run() {
-        new SumaView().setVisible(true);
+        new MultiplicaView().setVisible(true);
       }
     });
   }
