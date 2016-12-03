@@ -1,0 +1,7 @@
+Ejercicio 01
+-------------------
+
+Hacer un programa para calcular
+la suma y producto de 2 números.
+
+
